@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note App</title>
+    <!-- Main Style File  -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Font Google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- The Tools  -->
+    <header>
+      <i class="fa-solid fa-scissors" id="cut-icon"></i>
+      <i class="fa-solid fa-copy" id="copy-icon"></i>
+      <i class="fa-solid fa-clipboard" id="paste-icon"></i>
+      <i class="fa-solid fa-rotate-left" id="undo-icon"></i>
+      <i class="fa-solid fa-arrow-rotate-right" id="redo-icon"></i>
+      <i class="fa-solid fa-magnifying-glass-minus" id="font-decrease-icon"></i>
+      <i class="fa-solid fa-magnifying-glass-plus" id="font-increase-icon"></i>
+    </header>
+    <!-- The Text Area To Type The Note  -->
+    <textarea id="theNote" placeholder="Type Your Notes..."></textarea>
+    <!-- Main javaScript File  -->
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

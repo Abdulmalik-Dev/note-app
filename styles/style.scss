@@ -1,0 +1,84 @@
+// Start The Global Style
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Fredoka", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(207, 217, 255);
+  padding: 10px;
+}
+// End The Global Style
+// Start The Header
+header {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 15px;
+
+  @media (min-width: 1400px) {
+    & {
+      width: 1400px;
+      margin: auto;
+    }
+  }
+  @media (max-width: 450px) {
+    & {
+      gap: 0;
+    }
+  }
+
+  i {
+    padding: 5px 6px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    &:hover {
+      background-color: #d3d3d369;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+
+    @media (max-width: 450px) {
+      & {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+// End The Header
+// Start The Text Area For The Note (Note Typing Area)
+textarea {
+  width: 100%;
+  height: calc(100vh - 95px);
+  margin-top: 5px;
+  padding: 10px 25px;
+  border: none;
+  color: gray;
+  font-size: 15px;
+  resize: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (min-width: 1400px) {
+    & {
+      display: block;
+      width: 1400px;
+      margin: 5px auto 0;
+    }
+  }
+}
+// End The Text Area For The Note (Note Typing Area)
