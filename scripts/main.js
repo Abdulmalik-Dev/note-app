@@ -92,7 +92,10 @@ redo.addEventListener("click", () => {
 // Past Effect
 paste.addEventListener(
   "click",
-  async () => (theNote.value += await navigator.clipboard.readText())
+  async () => ({
+    let READ = await navigator.clipboard.readText();
+  theNote.value += READ;
+  })
 );
 
 // If There Is Note On The LocalStorage
