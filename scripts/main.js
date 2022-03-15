@@ -92,8 +92,8 @@ redo.addEventListener("click", () => {
 // Past Effect
 paste.addEventListener(
   "click",
-  async () => ({
-    theNote.value = await navigator.clipboard.readText();
+   () => ({
+    theNote.value = navigator.clipboard.readText();
   })
 );
 
