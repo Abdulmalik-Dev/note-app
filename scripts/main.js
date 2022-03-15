@@ -89,14 +89,6 @@ redo.addEventListener("click", () => {
   theNote.value = note.join("");
 });
 
-// Past Effect
-paste.addEventListener(
-  "click",
-   () => ({
-    theNote.value = navigator.clipboard.readText();
-  })
-);
-
 // If There Is Note On The LocalStorage
 if (localStorage.getItem("lNote"))
   // Get The Note Form The LocalStorage
