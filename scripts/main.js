@@ -93,8 +93,7 @@ redo.addEventListener("click", () => {
 paste.addEventListener(
   "click",
   async () => ({
-    let READ = await navigator.clipboard.readText();
-  theNote.value += READ;
+    theNote.value = await navigator.clipboard.readText();
   })
 );
 
